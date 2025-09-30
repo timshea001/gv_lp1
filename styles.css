@@ -287,7 +287,7 @@ p {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -307,7 +307,7 @@ p {
     font-size: 18px;
     line-height: 1.6;
     color: var(--gray-dark);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -815,32 +815,22 @@ td {
 
 .sticky-footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: var(--spacing-sm);
+    flex-direction: column;
 }
 
 .footer-pricing {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-}
-
-.footer-pricing .original {
-    text-decoration: line-through;
-    color: var(--gray-medium);
-    font-size: 14px;
-}
-
-.footer-pricing .sale {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--forest-green);
+    display: none;
 }
 
 .sticky-footer .btn {
-    padding: 12px 20px;
-    font-size: 13px;
+    padding: 16px 32px;
+    font-size: 14px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
 }
 
 /* === FOOTER === */
@@ -1025,28 +1015,23 @@ td {
 
     .pricing {
         flex-wrap: nowrap;
-        gap: 8px;
+        gap: 6px;
         max-width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .pricing::-webkit-scrollbar {
-        display: none;
+        justify-content: center;
+        align-items: baseline;
     }
 
     .original-price {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sale-price {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .discount-badge {
-        font-size: 10px;
-        padding: 4px 8px;
+        font-size: 9px;
+        padding: 6px 10px;
         white-space: nowrap;
     }
 

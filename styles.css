@@ -175,8 +175,8 @@ p {
 /* === NAVIGATION === */
 .main-nav {
     padding: var(--spacing-md) 0;
-    background-color: var(--cream);
-    border-bottom: 1px solid var(--gray-light);
+    background-color: var(--black);
+    border-bottom: 1px solid var(--gray-dark);
 }
 
 .main-nav .container {
@@ -202,10 +202,10 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(250, 250, 248, 0.98);
+    background-color: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(10px);
     padding: var(--spacing-sm) 0;
-    border-bottom: 1px solid var(--gray-light);
+    border-bottom: 1px solid var(--gray-dark);
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -228,6 +228,7 @@ p {
 /* === HERO SECTION === */
 .hero {
     padding: var(--spacing-xl) 0;
+    overflow-x: hidden;
 }
 
 .hero-grid {
@@ -243,6 +244,7 @@ p {
 
 .product-image {
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 8px;
 }
@@ -855,6 +857,11 @@ td {
 
     .hero-content {
         order: 2;
+        max-width: 100%;
+    }
+
+    .product-image {
+        max-width: 400px;
     }
 
     .carousel-btn {
@@ -872,8 +879,22 @@ td {
         --spacing-lg: 24px;
     }
 
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .main-nav .container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
     .main-nav .logo {
-        max-width: 150px;
+        max-width: 180px;
+    }
+
+    .nav-cta {
+        position: static;
+        width: 100%;
     }
 
     .nav-links {
@@ -898,6 +919,7 @@ td {
 
     .pricing {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .trust-badges {
@@ -906,25 +928,18 @@ td {
     }
 
     .press-title {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: var(--spacing-md);
     }
 
     .press-logos {
         justify-content: center;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-md);
     }
 
     .press-logos img {
-        max-width: 130px;
-        height: 50px;
-    }
-
-    .main-nav .logo {
-        max-width: 180px;
-    }
-
-    .nav-cta {
-        position: static;
+        max-width: 100px;
+        height: 40px;
     }
 
     .testimonial-card {
@@ -959,6 +974,14 @@ td {
     /* Show sticky footer on mobile */
     .sticky-footer {
         display: block;
+    }
+
+    .sticky-header .header-logo {
+        max-width: 120px;
+    }
+
+    .sticky-footer .container {
+        padding: 0 var(--spacing-sm);
     }
 }
 

@@ -176,19 +176,19 @@ p {
 
 .main-nav .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main-nav .logo {
     max-width: 250px;
     height: auto;
-    margin: 0 auto;
 }
 
 .nav-cta {
     position: absolute;
-    right: var(--spacing-md);
+    right: 0;
 }
 
 /* === STICKY HEADER === */

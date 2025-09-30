@@ -348,7 +348,7 @@ p {
 
 .press-title {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--gray-medium);
@@ -364,17 +364,11 @@ p {
 }
 
 .press-logos img {
-    max-width: 120px;
-    height: 40px;
+    max-width: 180px;
+    height: 60px;
     object-fit: contain;
-    opacity: 0.6;
+    opacity: 0.7;
     filter: grayscale(100%);
-    transition: all 0.3s ease;
-}
-
-.press-logos img:hover {
-    opacity: 1;
-    filter: grayscale(0%);
 }
 
 /* === TESTIMONIALS === */
@@ -902,8 +896,8 @@ td {
     }
 
     .press-logos img {
-        max-width: 80px;
-        height: 30px;
+        max-width: 120px;
+        height: 45px;
     }
 
     .testimonial-card {

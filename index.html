@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grove and Vine - Finally, Olive Oil That's Actually Fresh</title>
+    <meta name="description" content="Shipped within 3 months of harvest—not the 2+ year old oils on grocery shelves. Save 15% on your first bottle.">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        // Replace with your actual pixel ID
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+
+        fbq('track', 'ViewContent', {
+            content_name: 'Olive Oil Landing Page',
+            content_category: 'Landing Page',
+            value: 49.00,
+            currency: 'USD'
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- Sticky Header (mobile) -->
+    <header id="sticky-header" class="sticky-header">
+        <div class="container">
+            <img src="logo/Grove and Vine Horizontal Triple Black Logo.jpeg" alt="Grove and Vine" class="header-logo">
+            <a href="#cta" class="btn btn-primary btn-small">Save 15% Now</a>
+        </div>
+    </header>
+
+    <!-- Main Header -->
+    <nav class="main-nav">
+        <div class="container">
+            <img src="logo/Grove and Vine Horizontal Triple Black Logo.jpeg" alt="Grove and Vine" class="logo">
+            <div class="nav-links">
+                <a href="https://groveandvine.com/collections">Shop</a>
+                <a href="https://groveandvine.com/account/login">Member Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-image">
+                <img src="images/IMG_4707.JPG" alt="Grove and Vine Olive Oil Bottle" class="product-image">
+            </div>
+            <div class="hero-content">
+                <h1 class="headline" id="hero-headline">Finally, Olive Oil That's Actually Fresh</h1>
+
+                <div class="reviews">
+                    <div class="stars">★★★★★</div>
+                    <span class="review-count">4.9 (2,847 reviews)</span>
+                </div>
+
+                <p class="subheadline" id="hero-subheadline">Shipped within 3 months of harvest—not the 2+ year old oils on grocery shelves. Taste the difference real freshness makes.</p>
+
+                <div class="pricing">
+                    <span class="original-price">$49</span>
+                    <span class="sale-price">$41.65</span>
+                    <span class="discount-badge">Save 15% today only</span>
+                </div>
+
+                <p class="membership-teaser">or Join membership for $48.75/bottle</p>
+
+                <a href="#" class="btn btn-primary btn-large" id="primary-cta" onclick="trackAddToCart(event)">
+                    <span id="cta-text">Get 15% Off Your First Bottle →</span>
+                </a>
+
+                <a href="#membership" class="link-secondary">Learn about membership benefits →</a>
+
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>May 2025 Harvest</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>FDA Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SOCIAL PROOF BAR -->
+    <section class="press-bar">
+        <div class="container">
+            <p class="press-title">As Featured In</p>
+            <div class="press-logos">
+                <img src="press logos/The New York Times Logo.png" alt="The New York Times">
+                <img src="press logos/Food and Wine Logo.jpg" alt="Food & Wine">
+                <img src="press logos/GQ Logo.webp" alt="GQ">
+                <img src="press logos/Serious Eats Logo.png" alt="Serious Eats">
+                <img src="press logos/Tasting_Table_logo.png" alt="Tasting Table">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: UGC TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Members Are Saying</h2>
+            <div class="testimonial-carousel">
+                <button class="carousel-btn prev" onclick="scrollCarousel(-1)">←</button>
+                <div class="carousel-track" id="carousel-track">
+                    <div class="testimonial-card">
+                        <img src="social selects/1768B5D2-66D8-423E-B2C3-D80368FCEFFB.jpeg" alt="Customer review">
+                        <p class="username">@oliveoillover</p>
+                        <p class="review-text">"Game changer for my cooking"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="social selects/43E2C007-D7FF-479E-99A6-4E6301378BA5.jpeg" alt="Customer review">
+                        <p class="username">@foodenthusiast</p>
+                        <p class="review-text">"Never going back to store bought"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="social selects/4E690D09-1078-4889-998E-A8B3FBC3BE69.jpeg" alt="Customer review">
+                        <p class="username">@homechef</p>
+                        <p class="review-text">"The freshness is incredible"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="social selects/566899A4-1726-4D74-988C-DCFB6F706B16.jpeg" alt="Customer review">
+                        <p class="username">@gourmeteats</p>
+                        <p class="review-text">"Best olive oil I've ever tasted"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="social selects/73447F87-5EBB-495F-A1C9-BC806E197E9B.jpeg" alt="Customer review">
+                        <p class="username">@kitchenlife</p>
+                        <p class="review-text">"Worth every penny"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="social selects/770EE44C-0FE3-4488-ABCF-1A8A8CE37793.jpeg" alt="Customer review">
+                        <p class="username">@healthyfoodie</p>
+                        <p class="review-text">"Taste the difference immediately"</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="scrollCarousel(1)">→</button>
+            </div>
+            <a href="#" class="btn btn-secondary" onclick="trackAddToCart(event)">Shop Now & Save 15%</a>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROBLEM/AGITATION -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>The Uncomfortable Truth About Your Olive Oil</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>Expired On Arrival</h3>
+                    <p>Most grocery store oils are 18-24 months old before you buy them</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>Mysterious Origins</h3>
+                    <p>"Product of Italy" often means oils from Tunisia, Greece & Spain bottled in Italy</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💡</div>
+                    <h3>Destroyed By Light</h3>
+                    <p>Clear bottles under fluorescent lights kill antioxidants in weeks</p>
+                </div>
+            </div>
+            <p class="problem-fact">Did you know? Olive oil becomes rancid after 2 years, yet 73% of grocery store bottles never show harvest dates. You're likely cooking with dead oil.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: DIFFERENTIATORS -->
+    <section class="differentiators">
+        <div class="container">
+            <h2>The Grove and Vine Difference</h2>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <img src="images/IMG_1815.jpg" alt="Olive harvest">
+                    <h3>Chasing Global Harvests</h3>
+                    <div class="divider"></div>
+                    <p>We source from both hemispheres</p>
+                    <p><strong>Northern:</strong> October-November</p>
+                    <p><strong>Southern:</strong> May-June</p>
+                    <p>Your oil is never more than 6 months from tree to table</p>
+                </div>
+                <div class="diff-card">
+                    <img src="images/220320 TinaBFoto --8062.jpg" alt="Nicholas Coleman">
+                    <h3>Oleologist-Selected</h3>
+                    <div class="divider"></div>
+                    <p>Nicholas Coleman personally tastes and selects every oil</p>
+                    <p>Top of class, ONAOO certified</p>
+                    <p>Judges international competitions</p>
+                </div>
+                <div class="diff-card">
+                    <img src="images/IMG_4499.jpg" alt="Olive estate">
+                    <h3>Single-Estate Transparency</h3>
+                    <div class="divider"></div>
+                    <p>Every bottle includes:</p>
+                    <ul>
+                        <li>Exact harvest date</li>
+                        <li>Producer name & location</li>
+                        <li>Signed photo of actual grove</li>
+                        <li>Hand-typed tasting notes</li>
+                    </ul>
+                </div>
+                <div class="diff-card">
+                    <img src="images/IMG_4911.jpg" alt="Dark bottle protection">
+                    <h3>Protected From Day One</h3>
+                    <div class="divider"></div>
+                    <p>Dark glass protects from light</p>
+                    <p>Air-shipped during harvest</p>
+                    <p>FDA-certified bottling facility</p>
+                    <p>Nitrogen-flushed for freshness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: MEMBERSHIP -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <h2>Join The Coleman Collection</h2>
+            <p class="membership-subtitle">Get fresh, exclusive oils delivered quarterly</p>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Single Bottles</th>
+                            <th class="highlight">Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Price per bottle</td>
+                            <td>$49</td>
+                            <td class="highlight">$48.75</td>
+                        </tr>
+                        <tr>
+                            <td>Additional bottles</td>
+                            <td>$49</td>
+                            <td class="highlight">$36-38 (save 22-26%)</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive editions</td>
+                            <td>No</td>
+                            <td class="highlight">Yes, members only</td>
+                        </tr>
+                        <tr>
+                            <td>Free shipping</td>
+                            <td>Orders $125+</td>
+                            <td class="highlight">Always free</td>
+                        </tr>
+                        <tr>
+                            <td>Annual cost (4 bottles)</td>
+                            <td>$196</td>
+                            <td class="highlight">$195</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="membership-ctas">
+                <a href="#" class="btn btn-primary" onclick="trackAddToCart(event)">Join & Save →</a>
+                <a href="#" class="btn btn-ghost" onclick="trackAddToCart(event)">Stay With Single Bottle</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: URGENCY/SCARCITY -->
+    <section class="urgency">
+        <div class="container">
+            <div class="urgency-icon">🚚</div>
+            <h2>Current Harvest Ships In 4 Days</h2>
+            <div class="urgency-details">
+                <p><strong>Collection #39:</strong> Chilean Coratina</p>
+                <p><strong>Harvested:</strong> May 2025</p>
+                <p class="scarcity">Only <span class="bottles-remaining">47</span> bottles remaining in this collection</p>
+                <p class="next-shipment">Next shipment (Collection #40) arrives from Spain in August</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-large" onclick="trackAddToCart(event)">Claim Your Bottle Before It's Gone</a>
+        </div>
+    </section>
+
+    <!-- SECTION 8: TRUST/RISK REVERSAL -->
+    <section class="trust">
+        <div class="container">
+            <h2>Shop With Confidence</h2>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">🚚</div>
+                    <h4>Free Shipping</h4>
+                    <p>On all orders</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🛡️</div>
+                    <h4>Secure Checkout</h4>
+                    <p>256-bit encryption</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">📅</div>
+                    <h4>Cancel Anytime</h4>
+                    <p>No questions asked</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🇺🇸</div>
+                    <h4>Bottled In USA</h4>
+                    <p>FDA-certified facility</p>
+                </div>
+            </div>
+            <p class="support-text">Questions? Our olive oil experts are here to help.</p>
+            <p class="support-links">
+                <a href="mailto:hello@groveandvine.com">Email hello@groveandvine.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FINAL CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready To Taste The Difference?</h2>
+            <p class="countdown-text">Your discount expires in: <span id="countdown">2:47:33</span></p>
+            <a href="#" class="btn btn-primary btn-large" onclick="trackAddToCart(event)">Get 15% Off Your First Bottle</a>
+            <a href="#membership" class="link-secondary">Or explore membership →</a>
+        </div>
+    </section>
+
+    <!-- Sticky Footer (mobile only) -->
+    <div id="sticky-footer" class="sticky-footer">
+        <div class="container">
+            <div class="footer-pricing">
+                <span class="original">$49</span>
+                <span class="sale">$41.65</span>
+            </div>
+            <a href="#" class="btn btn-primary" onclick="trackAddToCart(event)">Add to Cart →</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Grove and Vine. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://groveandvine.com/pages/privacy-policy">Privacy</a>
+                <a href="https://groveandvine.com/pages/terms-of-service">Terms</a>
+                <a href="https://groveandvine.com/pages/contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Configuration for A/B Testing -->
+    <script src="config.js"></script>
+
+    <!-- Main JavaScript -->
+    <script>
+        // Apply A/B test variants
+        if (window.abTestConfig) {
+            document.getElementById('hero-headline').textContent = window.abTestConfig.heroHeadline;
+            document.getElementById('hero-subheadline').textContent = window.abTestConfig.heroSubheadline;
+            document.getElementById('cta-text').textContent = window.abTestConfig.ctaText;
+        }
+
+        // Sticky header on scroll
+        window.addEventListener('scroll', function() {
+            const stickyHeader = document.getElementById('sticky-header');
+            const stickyFooter = document.getElementById('sticky-footer');
+
+            if (window.scrollY > 100) {
+                stickyHeader.classList.add('visible');
+            } else {
+                stickyHeader.classList.remove('visible');
+            }
+
+            if (window.scrollY > 600) {
+                stickyFooter.classList.add('visible');
+            } else {
+                stickyFooter.classList.remove('visible');
+            }
+        });
+
+        // Carousel functionality
+        function scrollCarousel(direction) {
+            const track = document.getElementById('carousel-track');
+            const scrollAmount = 320; // card width + gap
+            track.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            if (!countdownEl) return;
+
+            let time = 2 * 3600 + 47 * 60 + 33; // 2:47:33 in seconds
+
+            setInterval(() => {
+                time--;
+                if (time < 0) time = 0;
+
+                const hours = Math.floor(time / 3600);
+                const minutes = Math.floor((time % 3600) / 60);
+                const seconds = time % 60;
+
+                countdownEl.textContent = `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+
+        updateCountdown();
+
+        // Track Add to Cart
+        function trackAddToCart(event) {
+            event.preventDefault();
+
+            fbq('track', 'AddToCart', {
+                content_name: 'Grove and Vine Olive Oil',
+                content_type: 'product',
+                value: 41.65,
+                currency: 'USD'
+            });
+
+            // Scroll tracking
+            const scrollDepth = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+            if (scrollDepth > 25) {
+                fbq('trackCustom', 'ScrollDepth', {depth: Math.floor(scrollDepth / 25) * 25 + '%'});
+            }
+
+            // Redirect to checkout (replace with actual checkout URL)
+            window.location.href = 'https://groveandvine.com/products/current-collection?discount=FRESH15';
+        }
+
+        // Track time on page
+        let timeOnPage = 0;
+        setInterval(() => {
+            timeOnPage += 30;
+            if (timeOnPage === 30 || timeOnPage === 60 || timeOnPage === 120) {
+                fbq('trackCustom', 'TimeOnPage', {seconds: timeOnPage});
+            }
+        }, 30000);
+    </script>
+</body>
+</html>

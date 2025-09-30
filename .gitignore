@@ -1,0 +1,21 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary Files
+*.log
+*.tmp
+
+# Next.js (from previous build)
+.next/
+node_modules/
+
+# Zip files
+*.zip

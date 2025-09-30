@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:groveandvine.com)"
+      "WebFetch(domain:groveandvine.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []

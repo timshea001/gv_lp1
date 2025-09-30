@@ -181,23 +181,14 @@ p {
 }
 
 .main-nav .logo {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
+    margin: 0 auto;
 }
 
-.nav-links {
-    display: flex;
-    gap: var(--spacing-md);
-}
-
-.nav-links a {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.nav-links a:hover {
-    color: var(--olive-green);
+.nav-cta {
+    position: absolute;
+    right: var(--spacing-md);
 }
 
 /* === STICKY HEADER === */
@@ -340,7 +331,7 @@ p {
 
 /* === PRESS BAR === */
 .press-bar {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-xl) 0;
     background-color: white;
     border-top: 1px solid var(--gray-light);
     border-bottom: 1px solid var(--gray-light);
@@ -348,24 +339,27 @@ p {
 
 .press-title {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--gray-medium);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .press-logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
 }
 
 .press-logos img {
-    max-width: 180px;
-    height: 60px;
+    max-width: 200px;
+    height: 70px;
     object-fit: contain;
     opacity: 0.7;
     filter: grayscale(100%);
@@ -891,13 +885,26 @@ td {
         align-items: flex-start;
     }
 
+    .press-title {
+        font-size: 16px;
+    }
+
     .press-logos {
-        gap: var(--spacing-md);
+        justify-content: center;
+        gap: var(--spacing-sm);
     }
 
     .press-logos img {
-        max-width: 120px;
-        height: 45px;
+        max-width: 130px;
+        height: 50px;
+    }
+
+    .main-nav .logo {
+        max-width: 180px;
+    }
+
+    .nav-cta {
+        position: static;
     }
 
     .testimonial-card {

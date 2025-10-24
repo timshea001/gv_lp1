@@ -304,17 +304,9 @@
         </div>
     </footer>
 
-    <!-- Configuration for A/B Testing -->
-    <script src="config.js"></script>
 
     <!-- Main JavaScript -->
     <script>
-        // Apply A/B test variants
-        if (window.abTestConfig) {
-            document.getElementById('hero-headline').textContent = window.abTestConfig.heroHeadline;
-            document.getElementById('hero-subheadline').textContent = window.abTestConfig.heroSubheadline;
-            document.getElementById('cta-text').textContent = window.abTestConfig.ctaText;
-        }
 
         // Sticky footer on scroll
         window.addEventListener('scroll', function() {

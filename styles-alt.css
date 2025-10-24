@@ -210,10 +210,20 @@ body {
 }
 
 .hero-product-image {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    min-height: 500px;
+}
+
+/* Icon styling for problem cards */
+.problem-icon-alt {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    line-height: 1;
 }
 
 .image-badge {
@@ -1031,7 +1041,13 @@ body {
     }
 
     .hero-product-image {
-        max-width: 280px;
+        max-width: 100%;
+        min-height: 300px;
+    }
+
+    .problem-icon-alt {
+        font-size: 36px;
+        margin-bottom: 12px;
     }
 
     .image-badge {

@@ -533,6 +533,11 @@ p {
 .problem-icon {
     font-size: 48px;
     margin-bottom: var(--spacing-md);
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
 }
 
 .problem-card h3 {
@@ -740,6 +745,11 @@ td {
 .trust-icon {
     font-size: 48px;
     margin-bottom: var(--spacing-md);
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
 }
 
 .trust-card h4 {

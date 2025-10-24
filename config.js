@@ -17,9 +17,9 @@ window.abTestConfig = {
     // ===================================
     variants: {
         A: {
-            heroHeadline: "Finally, Olive Oil That's Actually Fresh",
-            heroSubheadline: "Shipped within 3 months of harvest—not the 2+ year old oils on grocery shelves. Taste the difference real freshness makes.",
-            ctaText: "Get 15% Off Your First Bottle →"
+            heroHeadline: "Discover Extraordinary Olive Oils From Master Artisans",
+            heroSubheadline: "Master oleologist Nicholas Coleman travels the world to discover extraordinary estates and rare cultivars. Every harvest, he selects a single exceptional oil to share with you—crafted by artisan producers who've perfected their groves for generations.",
+            ctaText: "Experience This Collection →"
         },
         B: {
             heroHeadline: "Your Olive Oil Is Probably Rancid",

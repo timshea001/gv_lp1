@@ -532,10 +532,10 @@ p {
 }
 
 .problem-icon {
-    font-size: 48px;
+    font-size: 64px;
     margin-bottom: var(--spacing-md);
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;

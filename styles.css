@@ -685,7 +685,7 @@ td {
 .urgency {
     padding: var(--spacing-xl) 0;
     background-color: var(--soft-beige);
-    text-align: center;
+    text-align: left;
 }
 
 .urgency-icon {

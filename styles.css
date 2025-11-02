@@ -1005,16 +1005,19 @@ td {
         padding: 0;
         width: 100%;
         max-width: 100%;
+        overflow-x: hidden;
     }
 
     .hero-image {
         width: 100%;
-        overflow: visible;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
     .product-image {
         max-width: 100%;
-        width: 95%;
+        width: 90%;
         height: auto;
         object-fit: contain;
     }
@@ -1033,24 +1036,24 @@ td {
     }
 
     .pricing {
-        flex-wrap: nowrap;
-        gap: 6px;
+        flex-wrap: wrap;
+        gap: 8px;
         max-width: 100%;
         justify-content: center;
         align-items: baseline;
     }
 
     .original-price {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .sale-price {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .discount-badge {
-        font-size: 9px;
-        padding: 6px 10px;
+        font-size: 10px;
+        padding: 6px 8px;
         white-space: nowrap;
     }
 

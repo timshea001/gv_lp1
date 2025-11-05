@@ -8,7 +8,10 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Claude and local documentation
 .claude/
+local-docs/
 
 # Temporary Files
 *.log
@@ -21,8 +24,11 @@ node_modules/
 # Zip files
 *.zip
 
-# Project brief files
-gv-*.md
-
 # All markdown files
 *.md
+
+# Unnecessary directories
+screenshots/
+social selects/
+Icons for GV/
+reports/
